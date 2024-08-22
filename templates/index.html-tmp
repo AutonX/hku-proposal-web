@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Awesome Example</title>
+    <!-- 引入Font Awesome免费版本的最新CSS文件 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KyZXEAg3QhqLMpG8r+8fhAXLRk0xZ6wF4qyp1LRxt/p4EcbOe4iBdLEcl6vZ08syVbo2k0czdIOGvTzHUhJ9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="row gy-3">
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0s">
+            <i class="fa-solid fa-dragon fa-4x fa-fw icon-shadow-primary mb-3"></i>
+            <h3 class="fw-normal mb-3">Dragon</h3>
+            <p class="text-start small">This is a free dragon icon from Font Awesome.</p>
+        </div>
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+            <i class="fa-solid fa-user-astronaut fa-4x fa-fw icon-shadow-primary mb-3"></i>
+            <h3 class="fw-normal mb-3">LLM</h3>
+            <p class="text-start small">臭傻逼</p>
+        </div>
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+            <i class="fa-solid fa-laptop-code fa-4x fa-fw icon-shadow-primary mb-3"></i>
+            <h3 class="fw-normal mb-3">HTML Coding</h3>
+            <p class="text-start small">....</p>
+        </div>
+    </div>
+</body>
+</html>

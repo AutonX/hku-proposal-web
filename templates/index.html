@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>IT Worker | responsive portfolio template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100%7CRoboto:400,700,300,100">
+    <!-- Swiper.js-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}">
+    <!-- Universal Parallax-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/universal-parallax/universal-parallax.css') }}">
+    <!-- Animate.css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/animate.css/source/animate.css') }}">
+    <!-- Theme stylesheet-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.default.css') }}" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light py-4 py-lg-0 fixed-top bg-white border-bottom">
+        <div class="container"><a class="navbar-brand font-serif text-uppercase h6 text-primary fw-bold mb-0" href="#intro">proposal</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#front">FRONT</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#intro">INTRO</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#technique">TECHNIQUE</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#forecast">FORECAST</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#work">OUR WORK</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- INTRO SECTION-->
+    <section class="intro bg-cover bg-center d-flex align-items-center dark-overlay" id="front" style="background-image: url('{{ url_for('static', filename='img/aistock.jpg') }}')">
+        <div class="overlay-content text-white w-100">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-11 mx-auto">
+                        <h1 class="intro-heading mb-5 wow fadeInDown" data-wow-delay="0.3s">Stock Price Prediction</h1>
+                        <p class="h3 intro-text fw-normal wow fadeInUp" data-wow-delay="0.6s">Using Large Language Models for Analysis of Financial News and Reports</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  /- END INTRO SECTION-->
+    <!-- ABOUT SECTION -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Introduction</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles-huo.css') }}">
+	</head>
+	<body>
+		<section id="intro">
+			<div class="container">
+				<header class="mb-5 text-center">
+					<h2 class="heading">Introduction</h2>
+				</header>
+				<div class="row gy-4">
+					<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+						<p>With the rapid development and increasing complexity of global financial markets, predictive analytics and trading have become more significant in the finance sector. Traditional methods of analyzing financial markets face considerable challenges in managing large volumes of historical and real-time data. <strong></p>
+						<p>Tradition methods often struggle to effectively process and analyze unstructured data scattered across various financial reports and news articles,</strong> which are crucial for understanding market dynamics and predicting stock price trends.This project aims to propose a novel approach to stock price prediction by integrating the strengths of time series forecasting and Large Language Models (LLMs), developing a hybrid stock price prediction model.</p>
+						<p>In this model, <strong>time series analysis is responsible for processing and forecasting stock price trends based on historical trading data, while Large Language Models are utilized to deeply analyze financial news and reports.</strong> These text data serve as an additional input, potentially enhancing the overall performance of the forecasting model.</p>
+					</div>
+					<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="mb-3">
+							<p class="text-muted fw-light mb-0">Stock price</p>
+							<div class="progress" style="height: 30px">
+								<div class="progress-bar opacity-6" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="mb-3">
+							<p class="text-muted fw-light mb-0">Business news</p>
+							<div class="progress" style="height: 30px">
+								<div class="progress-bar opacity-7" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="mb-3">
+							<p class="text-muted fw-light mb-0">Economic news</p>
+							<div class="progress" style="height: 30px">
+								<div class="progress-bar opacity-8" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="mb-3">
+							<p class="text-muted fw-light mb-0">Financial report</p>
+							<div class="progress" style="height: 30px">
+								<div class="progress-bar opacity-9" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="mb-3">
+							<p class="text-muted fw-light mb-0">Geopolitics</p>
+							<div class="progress" style="height: 30px">
+								<div class="progress-bar opacity-9" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-lg-6 mx-auto text-center wow fadeInUp" data-wow-delay="0.9s">
+					<div class="enlarged-image-container">
+						<img class="rounded-circle img-fluid" src="{{ url_for('static', filename='img/aistock.webp') }}" alt="This is me - IT worker">
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+    <!-- /- END ABOUT SECTION -->
+    <!-- SERVICES SECTION -->
+    <section class="bg-primary text-white" id="technique">
+        <div class="container text-center">
+            <header class="mb-5 wow fadeInDown">
+                <h2 class="heading heading-white">technique</h2>
+            </header>
+            <div class="row gy-3">
+				<div class="col-lg-4 wow fadeInUp" data-wow-delay="0s"><i class="fas fa-dragon fa-4x fa-fw icon-shadow-primary mb-3"></i>
+					<h3 class="fw-normal mb-3">LSTM</h3>
+					<p class="text-start small">LSTM is one of the most classic time series price prediction models. It can learn long-term dependencies and maintain information over time, aiding in tasks like sequence prediction and time-series forecasting, It has a good correlation with stock price data. but the current price is not the only factor affecting future prices, so lstm also has certain limitations in stock price prediction.</p>
+				</div>
+				<div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s"><i class="fas fa-user-astronaut fa-4x fa-fw icon-shadow-primary mb-3"></i>
+					<h3 class="fw-normal mb-3">LLM</h3>
+					<p class="text-start small">LLM is the hottest AI model nowadays. Designed to understand and generate human-like text based on large amounts of training data. In addition to text generation and situational dialogue, it has also recently performed very well in the field of sentiment analysis. Using LLM to do sentiment analysis on company news is a good choice.</p>
+				</div>
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s"><i class="fa-4x fa-fw icon-shadow-primary mb-3 fas fa-search"></i>
+                    <h3 class="fw-normal mb-3">Data engineering</h3>
+                    <p class="text-start small">We have selected some of the most representative stocks in the US stock market. Within the same time interval, price and news sentiment are mathematically combined, and the final integrated result is used as the input data source for the final stage of stock price prediction.</p>
+                </div>				           
+            </div>
+            <hr class="my-4">
+            <div class="wow fadeInUp" data-wow-delay="0.6s">
+                <p class="lead">Would you like to know more detail?</p><a class="btn btn-outline-light" href="#contact">Contact us </a>
+            </div>
+        </div>
+    </section>
+    <!-- /- END SERVICES SECTION -->
+    <!-- TESTIMONIALS SECTION -->
+    <section class="bg-light" id="forecast">
+        <div class="container text-center">
+            <header class="mb-4">
+                <div class="row mb-4 wow fadeInUp">
+                    <div class="col-lg-6 mx-auto">
+                        <h2 class="heading">forecast</h2>
+                    </div>
+                </div>
+            </header>
+			<div class="enlarged-image-container">
+						<img class="img-fluid" src="{{ url_for('static', filename='img/result.png') }}" alt="This is me - IT worker">
+			</div>
+            
+        </div>
+    </section>
+    <!-- /- END TESTIMONIALS SECTION -->
+    <!-- STATISTICS SECTION -->
+    <section class="text-white dark-overlay" id="statistics">
+       <div class="parallax" data-parallax-image="{{ url_for('static', filename='img/parallax.jpg') }}"></div>
+        <div class="overlay-content py-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-3 col-mg-6 wow fadeInUp" data-wow-delay="0s">
+                        <div class="icon mb-3 mx-auto"><i class="fas fa-bars"></i></div>
+                        <p class="text-lg mb-0 fw-light" id="counter1">0</p>
+                        <p class="lead fw-normal lh-1 text-uppercase">Stock number</p>
+                    </div>
+                    <div class="col-lg-3 col-mg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="icon mb-3 mx-auto"><i class="fas fa-users"></i></div>
+                        <p class="text-lg mb-0 fw-light" id="counter2">0</p>
+                        <p class="lead fw-normal lh-1 text-uppercase">News number</p>
+                    </div>
+                    <div class="col-lg-3 col-mg-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="icon mb-3 mx-auto"><i class="fas fa-copy"></i></div>
+                        <p class="text-lg mb-0 fw-light" id="counter3">57.34%</p>
+                        <p class="lead fw-normal lh-1 text-uppercase">Accuracy</p>
+                    </div>
+                    <div class="col-lg-3 col-mg-6 wow fadeInUp" data-wow-delay="0.6000000000000001s">
+                        <div class="icon mb-3 mx-auto"><i class="fas fa-font"></i></div>
+                        <p class="text-lg mb-0 fw-light" id="counter4">13.22%</p>
+                        <p class="lead fw-normal lh-1 text-uppercase">rate of return</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /- END STATISTICS SECTION -->
+    <!-- REFERENCES SECTION -->
+    <section id="work">
+        <div class="container">
+            <header class="mb-5 text-center">
+                <div class="row mb-5 wow fadeInUp">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="heading">Our work</h2>
+                    </div>
+                </div>
+                <p class="lead wow fadeInUp" data-wow-delay="0.1s">model structure</p>
+            </header>
+			<div class="enlarged-image-container">
+						<img class="img-fluid" src="{{ url_for('static', filename='img/model.png') }}" alt="This is me - IT worker">
+			</div>
+            <div class="row gy-4" id="content">
+                <div class="col-lg-3 col-md-6 mix wow fadeInUp webdesign" data-wow-delay="0s" data-order="1">
+                    <a class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item1Modal">
+                        <img class="img-fluid w-100" src="{{ url_for('static', filename='img/ph-data.png') }}" alt="Project Name">
+                        <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+							<p style="font-size: 1.5em; font-weight: bold;">data collection</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 mix wow fadeInUp seo" data-wow-delay="0.1s" data-order="2">
+                    <a class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item2Modal">
+                        <img class="img-fluid w-100" src="{{ url_for('static', filename='img/ph-lstm.png') }}" alt="Project Name 2">
+                        <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                            <p style="font-size: 1.5em; font-weight: bold;">price forecast by LSTM</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 mix wow fadeInUp marketing" data-wow-delay="0.2s" data-order="3">
+                    <a class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item3Modal">
+                        <img class="img-fluid w-100" src="{{ url_for('static', filename='img/ph-llm.jpg') }}" alt="Project Name 3">
+                        <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                            <p style="font-size: 1.5em; font-weight: bold;">motion analysis by LLM</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 mix wow fadeInUp marketing" data-wow-delay="0.30000000000000004s" data-order="4">
+                    <a class="d-block work-item" href="#" data-bs-toggle="modal" data-bs-target="#item4Modal">
+                        <img class="img-fluid w-100" src="{{ url_for('static', filename='img/ph-merge.png') }}" alt="Project Name 4">
+                        <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                            <p style="font-size: 1.5em; font-weight: bold;">data integration</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+     <!--  Modal -->
+        <div class="modal fade" id="item1Modal" tabindex="-1" aria-labelledby="item1ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center px-lg-5 pb-lg-5 pt-lg-3">
+                        <div class="swiper work-slider mb-3">
+                               <div class="swiper-slide mb-5"><img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/ph-data.png') }}" alt=""></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <h2 class="heading mb-5" id="item1ModalLabel">data collection</h2>
+                        <p>We have a clean source of prices and news now. And we have successfully delineated the formats for historical price data and financial news, allowing for efficient integration and processing within our framework.</p>
+						<p>We are going to select some of the most influential stocks in the Nasdaq 100, and they will be very representative.</p>
+						<p>The financial reports, however, due to the variability in report structures across different companies, a one-size-fits-all solution for data extraction seems challenging. We will further investigate the range of formats and identify common elements to see if we can design a specialized spider. Other sources of financial data are now under investigation.</p>
+                        <a class="btn btn-outline-primary me-3 my-1" href="#"> <i class="fas fa-globe-americas me-2"></i>more</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!--  Modal -->
+        <div class="modal fade" id="item2Modal" tabindex="-1" aria-labelledby="item2ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center px-lg-5 pb-lg-5 pt-lg-3">
+                        <div class="swiper work-slider mb-3">
+                            <div class="swiper-slide mb-5"><img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/ph-lstm.png') }}" alt=""></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <h2 class="heading mb-5" id="item2ModalLabel">price forecast by LSTM</h2>
+                        <p>We have obtained the prediction data of lstm, but the accuracy is not ideal. We need to further integrate it with the sentiment analysis data of llM to improve the prediction performance of the final stage model.</p>
+                        <a class="btn btn-outline-primary me-3 my-1" href="#"> <i class="fas fa-globe-americas me-2"></i>more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Modal -->
+        <div class="modal fade" id="item3Modal" tabindex="-1" aria-labelledby="item3ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center px-lg-5 pb-lg-5 pt-lg-3">
+                        <div class="swiper work-slider mb-3">
+                                <div class="swiper-slide mb-5"><img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/ph-llm2.jpg') }}" alt=""></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <h2 class="heading mb-5" id="item3ModalLabel">emotion analysis by LLM</h2>
+                        <p>We have already started a detailed literature review of the paper Trading with the Momentum Transformer: An Intelligent and Interpretable Architecture and have got a baseline code from GitHub; studies on the baseline code and literature are ongoing. </p>
+						<p>As scheduled in our proposal, a rough model combined with the LLM should be available before the interim report and presentation.</p>
+                        <a class="btn btn-outline-primary me-3 my-1" href="#"> <i class="fas fa-globe-americas me-2"></i>more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Modal -->
+        <div class="modal fade" id="item4Modal" tabindex="-1" aria-labelledby="item4ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center px-lg-5 pb-lg-5 pt-lg-3">
+                        <div class="swiper work-slider mb-3">
+                                <div class="swiper-slide mb-5"><img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/ph-merge.png') }}" alt=""></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <h2 class="heading mb-5" id="item4ModalLabel">data integration</h2>
+                        <p>We have initially integrated a short section of lstm prediction results with the corresponding company news sentiment data, and unified the data format. And try to use it as the data input source for the final step. The specific fusion method still needs to be adjusted based on the final results. </p>
+                        <a class="btn btn-outline-primary me-3 my-1" href="#"> <i class="fas fa-globe-americas me-2"></i>more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- /- END REFERENCES SECTION -->
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="container wow bounceIn">
+            <header class="text-center mb-5">
+                <h2 class="heading">Contact us</h2>
+            </header>
+            <div class="row">
+                <div class="col-lg-7 mx-auto">
+                    <form>
+                        <div class="row gy-3">
+                            <div class="col-lg-6">
+                                <input class="form-control" type="text" name="firstname" placeholder="Your firstname *" required>
+                            </div>
+                            <div class="col-lg-6">
+                                <input class="form-control" type="text" name="lastname" placeholder="Your lastname *" required>
+                            </div>
+                            <div class="col-lg-12">
+                                <textarea class="form-control" name="message" rows="7" placeholder="message for me *"> </textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="btn btn-outline-primary" type="submit">Send message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /- END CONTACT SECTION -->
+    <footer class="py-5 bg-dark text-light">
+        <div class="container py-3">
+            <div class="row gy-3 mb-4 text-center align-items-center">
+                <div class="col-md-6 text-lg-start">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="social-link facebook" href="#"> <i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a class="social-link instagram" href="#"> <i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a class="social-link pinterest" href="#"> <i class="fab fa-pinterest"></i></a></li>
+                        <li class="list-inline-item"><a class="social-link email" href="#"> <i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-lg-end">
+                    <p class="mb-0 font-serif text-sm">© team menber: hyc, zxr, lhk, qnys </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/waypoints/lib/noframework.waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/universal-parallax/universal-parallax.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/wow.js/wow.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js"></script>
+    <script src="{{ url_for('static', filename='vendor/mixitup/mixitup.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/theme.js') }}"></script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	
+</body>
+</html>
